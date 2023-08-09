@@ -7,28 +7,29 @@
     const ii = Number(prompt("Informe outro número"));
     const uu = Number(prompt("Informe outro número"));
 
+    let oo = []
     if(ll < ii && ll < uu && ii < uu){
-        alert(`ll - ii - uu`);
+        oo = [uu, ii, ll];
     }
 
     else if(ll < ii && ll < uu && uu < ii){
-        alert(`ll - uu - ii`);
+        oo = [ii, uu, ll];
     }  
 
-    else if(ii < ll && ii < uu && ll < ii){
-        alert(`ii - ll - ii`);
+    else if(ii < ll && ii < uu && ll < uu){
+        oo = [uu, ll, ii];
     } 
 
     else if(ii < ll && ii < uu && uu < ll){
-        alert(`ii - uu - ll`);
+        oo = [ll, uu, ii];
     } 
 
     else if(uu < ii && uu < ll && ll < ii){
-        alert(`uu - ll - ii`);
+        oo = [ii, ll, uu];
     } 
 
     else {
-        alert(`uu - ii - ll`);
+        oo = [ii, uu, ll];
     } 
 
 </script>
