@@ -6,11 +6,15 @@
     const ll = Number(prompt("Informe um número"));
     const ii = Number(prompt("Informe outro número"));
 
-    if(ll > ii){
-        alert(`ll - ii`);
+    let oo = []
+    if(ll < ii){
+        oo = [ll, ii];
     }
 
     else {
-        alert(`ii - ll`);
+        oo = [ii, ii];
     }  
+
+    alert(oo.join("-"));
+    
 </script>
