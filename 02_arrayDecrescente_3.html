@@ -3,6 +3,32 @@
     //Peça para um usuário inserir três números. Crie um array com os três números, colocando-os em ordem decrescente. Para ordenar, NÃO use o método reverse();
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
+    const ll = Number(prompt("Informe um número"));
+    const ii = Number(prompt("Informe outro número"));
+    const uu = Number(prompt("Informe outro número"));
 
+    if(ll < ii && ll < uu && ii < uu){
+        alert(`ll - ii - uu`);
+    }
+
+    else if(ll < ii && ll < uu && uu < ii){
+        alert(`ll - uu - ii`);
+    }  
+
+    else if(ii < ll && ii < uu && ll < ii){
+        alert(`ii - ll - ii`);
+    } 
+
+    else if(ii < ll && ii < uu && uu < ll){
+        alert(`ii - uu - ll`);
+    } 
+
+    else if(uu < ii && uu < ll && ll < ii){
+        alert(`uu - ll - ii`);
+    } 
+
+    else {
+        alert(`uu - ii - ll`);
+    } 
 
 </script>
