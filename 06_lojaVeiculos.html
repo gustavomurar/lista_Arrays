@@ -9,12 +9,19 @@
 
     //Apresente a lista final de cada tipo de veículo.
 
-    //ENTRADA
+    const jj = prompt("Informe mais três veículos").trim();
+    const hh = prompt("Informe qual o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch").trim();
+    let oo = []
+    if ( hh == "SUV"){
+        oo = [ SUV = "Tiggo", "Sportage", "Tucson", "EcoSport", jj, "Sedan" = "Civic", "Corolla", "Arizzo", "Fusion", "Hatch" = "308", "Focus", "i30"];
+    }
 
+    else if ( hh == "Sedan"){
+        oo = [ "Civic", "Corolla", "Arizzo", "Fusion", jj, "SUV" = "Tiggo", "Sportage", "Tucson", "EcoSport", "Hatch" = "308", "Focus", "i30"];
+    }
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    else {
+        oo = [ "308", "Focus", "i30", jj, "SUV" = "Tiggo", "Sportage", "Tucson", "EcoSport", "Sedan" = "Civic", "Corolla", "Arizzo", "Fusion"];
+    }
+    alert(oo);
 </script>
